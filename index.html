@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="bike">
+        <nav>
+            <img src="image/logo.png" class="logo">
+            <a href="#" class="btn">Test Drive</a>
+        </nav>
+        <div class="content">
+            <h2>The BMW</h2>
+            <h1>G 310 R</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem iusto laborum molestias laboriosam voluptatem nihil iste accusantium itaque sint repudiandae, molestiae odit eum atque amet, beatae culpa perferendis reprehenderit quam.</p>
+            <h3>Choose Your Color</h3>
+            <div class="colour-select">
+                <div id="red"></div>
+                <div id="blue"></div>
+                <div id="black"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let redBtn = document.getElementById("red");
+        let blueBtn = document.getElementById("blue");    
+        let blackBtn = document.getElementById("black");
+        let bike = document.getElementById("bike")
+        
+        redBtn.onclick = function(){
+            bike.style.backgroundImage = "url(image/BMW1.png)";
+        }
+        blueBtn.onclick = function(){
+            bike.style.backgroundImage = "url(image/BMW2.png)";
+        }
+        blackBtn.onclick = function(){
+            bike.style.backgroundImage = "url(image/BMW3.png)";
+        }
+
+    </script>
+    
+
+</body>
+</html>
